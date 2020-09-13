@@ -69,7 +69,7 @@ class FunctionContext {
     }
 }
 
-var middleware = async (req, res) => {
+var middleware = (req, res) => {
     let cb = (err, functionResult) => {
         if (err) {
             console.error(err);
